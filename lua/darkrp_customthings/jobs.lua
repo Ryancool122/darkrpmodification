@@ -39,22 +39,26 @@ GAMEMODE.CivilProtection = {
 	[TEAM_POLICE] = true,
 	[TEAM_CHIEF] = true,
 	[TEAM_MAYOR] = true,
+	[TEAM_SWAT] = true,
+
 }
-TEAM_S.W.A.T Unit = DarkRP.createJob("S.W.A.T Unit", {
-	color = Color(155, 255, 255, 255),
-	model = {
-		"models/player/swat.mdl",
-		
-		},
-	description = [[ CP Force.
-		]],
-	weapons = {"m9k_m92beretta"m9k_kac_pdw"arrest_stick"unarrest_stick"stunstick"keys"door_ram" weaponchecker"m9k_knife" },
-	command = "S.W.A.T Unit",
-	max = 0.4, 
+   TEAM_SWAT = DarkRP.createJob("S.W.A.T", {
+	color = Color(80, 45, 0, 255),
+	model = "models/player/swat.mdl",
+	description = [[This is a donator special job,
+		your duty is to heal on of your
+		wounded operatives. You should stay in the PD
+		until backup is needed.
+		Do everything you can to keep the city safe.]],
+	weapons = {"arrest_stick", "unarrest_stick", "weapon_glock2", "weapon_ak472", "ls_sniper", "weapon_m42", "weapon_mp52", "stunstick", "door_ram", "weaponchecker"},
+	command = "swat",
+	max = 3,
 	salary = 155,
 	admin = 0,
-	vote = false,
-	hasLicense = Ture,
+	vote = true,
+	hasLicense = true,
+ 
+     })
 --[[---------------------------------------------------------------------------
 Jobs that are hitmen (enables the hitman menu)
 ---------------------------------------------------------------------------]]
