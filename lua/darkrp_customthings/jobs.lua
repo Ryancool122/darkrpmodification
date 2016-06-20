@@ -40,7 +40,21 @@ GAMEMODE.CivilProtection = {
 	[TEAM_CHIEF] = true,
 	[TEAM_MAYOR] = true,
 }
-
+TEAM_S.W.A.T Unit = DarkRP.createJob("S.W.A.T Unit", {
+	color = Color(155, 255, 255, 255),
+	model = {
+		"models/player/swat.mdl",
+		
+		},
+	description = [[ CP Force.
+		]],
+	weapons = {"m9k_m92beretta"m9k_kac_pdw"arrest_stick"unarrest_stick"stunstick"keys"door_ram" weaponchecker"m9k_knife" },
+	command = "S.W.A.T Unit",
+	max = 0.4, 
+	salary = 155,
+	admin = 0,
+	vote = false,
+	hasLicense = Ture,
 --[[---------------------------------------------------------------------------
 Jobs that are hitmen (enables the hitman menu)
 ---------------------------------------------------------------------------]]
